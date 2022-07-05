@@ -1,12 +1,13 @@
+#!/bin/bash
 #include <stdio.h>
 
-*/*
+/**
  *
- * main - Entry point
+ * * main - Prints using puts() command
  *
- * Return: Always 0 (Success)
+ * * Return: 0 prints something
  *
- */
+ * */
 
 int main(void)
 
