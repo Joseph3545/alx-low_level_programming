@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 /**
-
  * main - n is greater positive, negative or zero
 
  * Return: Always 0 (Success)
