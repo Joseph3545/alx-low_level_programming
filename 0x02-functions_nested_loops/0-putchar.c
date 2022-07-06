@@ -3,7 +3,7 @@
 * main  - prints _putchar
 * Return : always 0
 */
-int main(void) {0}
+int main(void) {return 0}
 {
 	_putchar ('_');
 	_putchar ('p');
