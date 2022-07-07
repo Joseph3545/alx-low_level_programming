@@ -1,12 +1,17 @@
 #include "main.h"
 /**
- *test isalpha - a function that checks for alphabetic character
- *Return: 1 if c is a letter (lower or uppercase) - 0 otherwise
+ * print_alphabet_x10 -> prints the lowercase alphabets
  */
-int_isalpha(int c)
+void print_alphabet_x10(void);
 {
-	if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
-		return (1);
-	else
-		return (0);
+	int (j)
+	int (c)
+
+	for (x = 0, x < 10, x++)
+	{
+		for (j = 'a' ; j <= 'z' j++)
+		{
+			_putchar (j)
+		}
+		_putchar
 }
