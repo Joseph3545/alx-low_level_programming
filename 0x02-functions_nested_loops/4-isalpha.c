@@ -1,18 +1,22 @@
 #include "main.h"
+
 /**
- * print_alphabet_x10 -> prints the lowercase alphabets
+ * _isalpha - Return 1 if c is a letter. lowercase or uppercase
+ *@c: The int to print
+ * Return: Always 0.
  */
+int _isalpha(int c)
 
-void print_alphabet_x10(void);
 {
-	int j;
-	int c;
+	if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
 
-	for (x = 0; x < 10; x++)
 	{
-		for (j = 'a' ; j <= 'z' ;  j++)
-		{
-			_putchar (j);
-		}
-		_putchar('\n')
+	return (1);
+	}
+
+	else
+
+	{
+	return (0);
+	}
 }
