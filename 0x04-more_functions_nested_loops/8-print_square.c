@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_size -> printing size
+ *print_square -> printing line
  *@size: integer params
  */
 
