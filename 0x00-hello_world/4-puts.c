@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 /**
- *
- * * main - Prints using puts() command
- *
- * * Return: 0 prints something
- *
- * */
+ * main - Prints using puts() command
+ * Return: 0 prints something
+ */
 
 int main(void)
 
