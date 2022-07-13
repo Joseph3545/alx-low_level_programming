@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- *print_alphabet_x10 - coment
+ *void print_alphabet_x10(void) - prints the lowercase alphabets
  *Return: valve 0
  */
 
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 {
 	int i;
-	
 	char c;
+
 	for (i = 0; i < 10; ++i)
 	{
 		for (c = 'a'; c <= 'z'; c++)
