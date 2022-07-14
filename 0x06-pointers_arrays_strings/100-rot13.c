@@ -1,28 +1,34 @@
 #include "main.h"
-
 /**
- * rot13 - Write a function that encodes a string using rot13
- * @hi: This is my input string
- * Return: String converted to rot13
+ *rot13 - encodes strings using rot13.
+ *@s: pointer to string.
+ *Return: pointer to encoded string.
  */
-
-char *rot13(char *hi)
+char *rot13(char *s)
 {
-	int index, count;
-	char minus[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char mayus[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+		int stringCount, rotation;
+		char r1[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+			'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
+			'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+			'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+			'Z'};
+		char r2[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
+			'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+			'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+			'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+			'M'};
 
-	for (index = 0; hi[index] != '\0'; ++index)
-	{
-		for (count = 0; minus[count] != '\0' ; count++)
+		for (stringCount = 0; s[stringCount] != '\0'; stringCount++)
 		{
-			if (hi[index] == minus[count])
+			for (rotation = 0; rotation < 53; rotation++)
 			{
-				hi[index] = mayus[count];
-				break;
+				if (r1[rotation] == s[stringCount])
+				{
+					s[stringCount] = r2[rotation];
+					break;
+				}
 			}
+
 		}
-	}
-	hi[index] = '\0';
-	return (hi);
+		return (s);
 }
